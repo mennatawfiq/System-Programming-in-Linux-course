@@ -5,8 +5,9 @@
 
 const char buf[] = "Usage: pwd\n";
 
-int main(int argc, char** argv[]){
-	if(argc > 1)
+int main(int argc, char **argv[])
+{
+	if (argc > 1)
 		write(1, buf, strlen(buf));
 
 	char cwd[PATH_MAX];
